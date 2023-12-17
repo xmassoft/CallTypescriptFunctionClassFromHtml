@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+	<script defer="defer" src="./dist/bundle.js"></script>
+	<script>
+	
+	    function testLibraryClass() {
+		    const person = new MyPersonClass("Anders" , "Hejlsberg");
+			console.log("RES CLASS: " +  person.getFullName());
+		}
+		
+		function testLibraryFunction() {
+		   console.log("RES FUNCTION: " +  myFunction());
+		}
+	
+	
+	</script>
+  </head>
+  <body>
+    <div class="cal">
+      <center>
+	<button type="button" onclick="testLibraryFunction()">CALL TYPESCRIPT FUNCTION </button>
+	<button type="button" onclick="testLibraryClass()">CALL TYPESCRIPT CLASS </button>
+	
+  </center>
+  </div>
+  </body>
+</html>

@@ -1,5 +1,8 @@
 
 const path = require('path');
+const webpack = require('webpack');
+
+
 
 module.exports = {
   entry: './src/index.ts',
@@ -20,6 +23,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
 	library: 'CallTypescriptFunctionClassFromHtml'
   },
+  
+  plugins: [
+    new webpack.BannerPlugin({
+      entryOnly: true,
+      include: 'bundle.js',
+      raw: true,
+      banner: 'var myFunction = window.CallTypescriptFunctionClassFromHtml.myFunction; var MyPersonClass = window.CallTypescriptFunctionClassFromHtml.MyPersonClass;',
+      footer: true
+    })
+  ]
   
 };
 

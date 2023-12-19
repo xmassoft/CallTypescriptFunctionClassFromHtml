@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production && echo var myFunction = window.CallTypescriptFunctionClassFromHtml.myFunction; var MyPersonClass = window.CallTypescriptFunctionClassFromHtml.MyPersonClass; >> ./dist/bundle.js"
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "Antoni Nadal(xmassoft)",

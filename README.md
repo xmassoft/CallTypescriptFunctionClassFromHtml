@@ -8,4 +8,4 @@ Execute:
 
 (2) npm run build
 
-(3) Open index.html with a browser
+(3) Open index.html with a browser (see browser console)
